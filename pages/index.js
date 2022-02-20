@@ -63,7 +63,7 @@ export default function Home() {
     console.log("Price Of NFT", price.toString());
     console.log("Item ID",nft.itemId);
     console.log("Rent Button Pressed!")
-    const transaction = await contract.rentMarketItem(nftaddress, nft.itemId, {
+    const transaction = await contract.rentMarketItem(nft.itemId, {
       value: price
     })
     await transaction.wait()
