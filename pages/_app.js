@@ -6,8 +6,6 @@ function Marketplace({ Component, pageProps }) {
   return (
     
     <div>
-      
-        <link rel="shortcut icon" href="/rocket.png" />
         <title>NFT Rental Marketplace</title>
       
       <nav className="border-b p-6">
