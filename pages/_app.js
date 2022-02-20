@@ -4,7 +4,12 @@ import Link from 'next/link'
 
 function Marketplace({ Component, pageProps }) {
   return (
+    
     <div>
+      
+        <link rel="shortcut icon" href="/rocket.png" />
+        <title>NFT Rental Marketplace</title>
+      
       <nav className="border-b p-6">
         <p className="text-4xl font-bold">NFT Rental Marketplace</p>
         <div className="flex mt-4">
