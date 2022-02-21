@@ -29,7 +29,7 @@ function Marketplace({ Component, pageProps }) {
           <meta property="og:url" content="https://nft-rental-marketplace.netlify.app/" />
           <meta property="og:title" content="NFT Rental Marketplace" />
           <meta property="og:description" content="Collateral Free NFT Rental Marketplace!" />
-          <meta property="og:image" content="https://drive.google.com/file/d/1bIdWAinpyNNNU6lbF7g7qnCr8RhY5lWJ/view?usp=sharing" />
+          <meta property="og:image" content="https://user-images.githubusercontent.com/30176438/154859304-fdff81f6-490b-4674-b585-d115e89c0996.JPG" />
 
           
           <meta property="twitter:card" content="summary_large_image" />
@@ -37,7 +37,7 @@ function Marketplace({ Component, pageProps }) {
           <meta property="twitter:title" content="NFT Rental Marketplace" />
           <meta property="twitter:description" content="Collateral Free NFT Rental Marketplace!" />
           <meta property="twitter:image"
-            content="https://drive.google.com/file/d/1bIdWAinpyNNNU6lbF7g7qnCr8RhY5lWJ/view?usp=sharing" />
+            content="https://user-images.githubusercontent.com/30176438/154859304-fdff81f6-490b-4674-b585-d115e89c0996.JPG" />
         </head>
       </div>
       
