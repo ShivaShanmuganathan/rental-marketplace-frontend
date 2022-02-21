@@ -2,12 +2,7 @@
 
 ## [Check It Out](https://nft-rental-marketplace.netlify.app) ⏩ [nft-rental-marketplace.netlify.app](https://nft-rental-marketplace.netlify.app/) 
 
-![capture](https://user-images.githubusercontent.com/30176438/154909602-1490d864-abc2-4129-aaae-70b158c60302.jpeg)
-
-
 ## Project Description
-
-
 
 ### Fullstack NFT Rental Marketplace Dapp ✨Collateral Free Renting✨
 
@@ -15,8 +10,19 @@
 - Anyone can rent the NFT from the Rental Marketplace by paying the rental price.
 - The Renter will not be able to transfer the rented NFT to anyone. 
 - After the end of the rental duration, either the renter, owner or anyone can call finishRenting function to transfer the NFT from Renter to the NFT Owner.
+![capture](https://user-images.githubusercontent.com/30176438/154909602-1490d864-abc2-4129-aaae-70b158c60302.jpeg)
 
 ![rental_poster1](https://user-images.githubusercontent.com/30176438/154909694-5ca63dce-5aeb-47ad-a1e1-594eabd9b98e.JPG)
+
+## About Frontend - Project Is Deployed On [Vercel](https://nft-rental-marketplace.vercel.app/)
+
+### This project consists of five pages
+
+- Home - Displays all NFTs listed for rent in the rental marketplace
+- Create NFTs - Users can create their own NFTs by filling all the details in this page
+- My NFTs - Users can view the NFTs they have created
+- Rented NFTs - Users can view the NFTs they have rented
+- Claimable NFTs - Users can view all NFTs that is past the rental duration
 
 <details> 
   <summary> Working Explained In Detail </summary>
@@ -38,15 +44,7 @@
 ![rental_poster](https://user-images.githubusercontent.com/30176438/154909650-ba1461fd-833b-4031-9070-8edb3c692213.JPG)
 
 
-## About Frontend - Project Is Deployed On [Vercel](https://nft-rental-marketplace.vercel.app/)
 
-### This project consists of five pages
-
-- Home - Displays all NFTs listed for rent in the rental marketplace
-- Create NFTs - Users can create their own NFTs by filling all the details in this page
-- My NFTs - Users can view the NFTs they have created
-- Rented NFTs - Users can view the NFTs they have rented
-- Claimable NFTs - Users can view all NFTs that is past the rental duration
 
 ## How To Run This Project Locally
 
