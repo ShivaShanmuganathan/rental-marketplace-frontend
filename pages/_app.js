@@ -6,7 +6,43 @@ function Marketplace({ Component, pageProps }) {
   return (
     
     <div>
-        <title>NFT Rental Marketplace</title>
+
+      <div>
+        <head>
+          <meta charSet="utf-8" />
+          <link rel="icon" href="https://drive.google.com/file/d/1fVD8ZsSK_CYaAjQiASItvznMMaoxeVho/view?usp=sharing" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#000000" />
+          <meta
+            name="description"
+            content="Web site created using create-react-app"
+          />
+          <link rel="apple-touch-icon" href="https://drive.google.com/file/d/1fVD8ZsSK_CYaAjQiASItvznMMaoxeVho/view?usp=sharing" />
+          
+          <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+          <title>NFT Rental Marketplace</title>
+          <meta name="title" content="NFT Rental Marketplace" />
+          <meta name="description" content="Rent NFTs from the Marketplace without any collateral" />
+
+          
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://nft-rental-marketplace.netlify.app/" />
+          <meta property="og:title" content="NFT Rental Marketplace" />
+          <meta property="og:description" content="Collateral Free NFT Rental Marketplace!" />
+          <meta property="og:image" content="https://drive.google.com/file/d/1bIdWAinpyNNNU6lbF7g7qnCr8RhY5lWJ/view?usp=sharing" />
+
+          
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://nft-rental-marketplace.netlify.app/" />
+          <meta property="twitter:title" content="NFT Rental Marketplace" />
+          <meta property="twitter:description" content="Collateral Free NFT Rental Marketplace!" />
+          <meta property="twitter:image"
+            content="https://drive.google.com/file/d/1bIdWAinpyNNNU6lbF7g7qnCr8RhY5lWJ/view?usp=sharing" />
+        </head>
+      </div>
+      
+      
+      {/* <title>NFT Rental Marketplace</title> */}
       
       <nav className="border-b p-6 bg-black">
         <p className="text-4xl font-bold text-white">NFT Rental Marketplace</p>
