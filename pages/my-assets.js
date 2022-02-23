@@ -82,7 +82,7 @@ export default function MyAssets() {
       
                         <div className="p-4 bg-black">
                           <p className="text-2xl font-bold text-white">NFT is Rented</p>
-                          <p className="text-2xl font-bold text-white">Price: {nft.price} Eth</p>
+                          <p className="text-2xl font-bold text-white">Price: {nft.price} Matic</p>
                           <button className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded" onClick={() => paybackNFT(nft)}>Claim</button>
                         </div>
               
@@ -100,7 +100,7 @@ export default function MyAssets() {
     
                       <div className="p-4 bg-black">
                         <p className="text-2xl font-bold text-white">NFT is Rented</p>
-                        <p className="text-2xl font-bold text-white">Price: {nft.price} Eth</p>
+                        <p className="text-2xl font-bold text-white">Price: {nft.price} Matic</p>
                         <p className="text-2xl font-bold text-white">Expires In {nft.time} Seconds</p>
                       </div>
             
@@ -116,7 +116,7 @@ export default function MyAssets() {
     
                       <div className="p-4 bg-black">
                         <p className="text-2xl font-bold text-white">NFT is Listed in marketplace</p>
-                        <p className="text-2xl font-bold text-white">Price: {nft.price} Eth</p>
+                        <p className="text-2xl font-bold text-white">Price: {nft.price} Matic</p>
                         <p className="text-2xl font-bold text-white">Duration {nft.time2} Minutes</p>
                       </div>
             
