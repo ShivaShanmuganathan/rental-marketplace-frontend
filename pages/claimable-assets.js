@@ -17,8 +17,24 @@ export default function ClaimableDashboard() {
     useEffect(() => {
       loadNFTs()
     }, [])
+    const checkNetwork = async() => {
+      const { ethereum } = window;
+      let chainId = await ethereum.request({ method: 'eth_chainId' })
+      if (chainId !== '0x13881') {
+        // window.alert("Please switch to the Matic Test Network!");
+        // throw new Error("Please switch to the Matic Test Network");
+        
+        window.alert("This Dapp works on Matic Test Network Only. Please Approve to switch to Mumbai");
+        await ethereum.request({
+          method: 'wallet_switchEthereumChain',
+          params: [{ chainId:'0x13881' }],
+        })  
+      }
+      
+    }
     
     async function loadNFTs() {
+      await checkNetwork();
       const web3Modal = new Web3Modal()
       const connection = await web3Modal.connect()
       const provider = new ethers.providers.Web3Provider(connection)
@@ -27,7 +43,7 @@ export default function ClaimableDashboard() {
       const marketContract = new ethers.Contract(nftmarketaddress, Market.abi, signer)
       const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider)
       const data = await marketContract.fetchItemsClaimable()
-    //   await data.wait()
+      // await data.wait()
 
       console.log("Works Until Here");
       console.log("Time Now in JS World", (Math.floor(Date.now() / 1000)))
@@ -54,6 +70,7 @@ export default function ClaimableDashboard() {
 
     async function paybackNFT(nft) {
         /* needs the user to sign the transaction, so will use Web3Provider and sign it */
+        await checkNetwork();
         const web3Modal = new Web3Modal()
         const connection = await web3Modal.connect()
         const provider = new ethers.providers.Web3Provider(connection)

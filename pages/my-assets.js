@@ -17,11 +17,32 @@ export default function MyAssets() {
   useEffect(() => {
     loadNFTs()
   }, [])
+
+  const checkNetwork = async() => {
+    const { ethereum } = window;
+    let chainId = await ethereum.request({ method: 'eth_chainId' })
+    if (chainId !== '0x13881') {
+      // window.alert("Please switch to the Matic Test Network!");
+      // throw new Error("Please switch to the Matic Test Network");
+      
+      window.alert("This Dapp works on Matic Test Network Only. Please Approve to switch to Mumbai");
+      await ethereum.request({
+        method: 'wallet_switchEthereumChain',
+        params: [{ chainId:'0x13881' }],
+      })  
+    }
+    
+  }
+
+
   async function loadNFTs() {
+    await checkNetwork();
+
     const web3Modal = new Web3Modal({
-      network: "mainnet",
+      network: "mumbai",
       cacheProvider: true,
     })
+    // console.log("chainId of network", web3Modal);
     const connection = await web3Modal.connect()
     const provider = new ethers.providers.Web3Provider(connection)
     const signer = provider.getSigner()
@@ -53,6 +74,7 @@ export default function MyAssets() {
   }
   async function paybackNFT(nft) {
     /* needs the user to sign the transaction, so will use Web3Provider and sign it */
+    await checkNetwork();
     const web3Modal = new Web3Modal()
     const connection = await web3Modal.connect()
     const provider = new ethers.providers.Web3Provider(connection)

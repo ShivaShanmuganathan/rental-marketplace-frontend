@@ -17,6 +17,21 @@ export default function CreateItem() {
   const [fileUrl, setFileUrl] = useState(null)
   const [formInput, updateFormInput] = useState({ price: '',time: '' , name: '', description: '' })
   const router = useRouter()
+  const checkNetwork = async() => {
+    const { ethereum } = window;
+    let chainId = await ethereum.request({ method: 'eth_chainId' })
+    if (chainId !== '0x13881') {
+      // window.alert("Please switch to the Matic Test Network!");
+      // throw new Error("Please switch to the Matic Test Network");
+      
+      window.alert("This Dapp works on Matic Test Network Only. Please Approve to switch to Mumbai");
+      await ethereum.request({
+        method: 'wallet_switchEthereumChain',
+        params: [{ chainId:'0x13881' }],
+      })  
+    }
+    
+  }
 
   async function onChange(e) {
     const file = e.target.files[0]
@@ -33,6 +48,7 @@ export default function CreateItem() {
       console.log('Error uploading file: ', error)
     }  
   }
+
   async function createMarket() {
     const { name, description, time, price } = formInput
     if (!name || !description || !time || !price || !fileUrl) return
@@ -51,11 +67,12 @@ export default function CreateItem() {
   }
 
   async function createSale(url) {
+    await checkNetwork();
     const web3Modal = new Web3Modal()
     const connection = await web3Modal.connect()
     const provider = new ethers.providers.Web3Provider(connection)    
     const signer = provider.getSigner()
-    
+        
     /* next, create the item */
     let contract = new ethers.Contract(nftaddress, NFT.abi, signer)
     let transaction = await contract.createToken(url)
