@@ -97,42 +97,42 @@ export default function CreateItem() {
   return (
     <div className="flex justify-center bg-black">
       <div className="w-1/2 flex flex-col pb-12">
-        <label for="AssetName" className=" my-12 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Asset Name</label>
+        <label htmlFor="AssetName" className=" my-12 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Asset Name</label>
         <input 
           placeholder="Enter your NFT Name"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
         />
 
-        <label for="AssetDescription" className="my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Asset Description</label>
+        <label htmlFor="AssetDescription" className="my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Asset Description</label>
         <textarea
           placeholder="Asset Description"
           className="block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
         />
 
-        <label for="RentalTime" className="my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Rental Time In Minutes</label>
+        <label htmlFor="RentalTime" className="my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Rental Time In Minutes</label>
         <input
           placeholder="Enter Time In Minutes"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, time: e.target.value })}
         />
         
-        <label for="AssetPrice" className=" my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Asset Price</label>
+        <label htmlFor="AssetPrice" className=" my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Asset Price</label>
         <input
           placeholder="Asset Price in Matic"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, price: e.target.value })}
         />
 
-        <label for="formFile" class=" my-6 form-label inline-block mb-2 text-white-700 text-2xl font-bold">Upload Your Image For NFT</label>
-        <div class="my-6 flex items-left justify-left">
-        <label class="w-64 flex flex-col items-center px-4 py-6 bg-black text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
+        <label htmlFor="formFile" className=" my-6 form-label inline-block mb-2 text-white-700 text-2xl font-bold">Upload Your Image For NFT</label>
+        <div className="my-6 flex items-left justify-left">
+        <label className="w-64 flex flex-col items-center px-4 py-6 bg-black text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
           <svg fill="#FFF" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/>
           </svg>
-          <span class="mt-2 text-base leading-normal">Select a file</span>
+          <span className="mt-2 text-base leading-normal">Select a file</span>
           <input
             type="file"
             name="Asset"
