@@ -97,32 +97,39 @@ export default function CreateItem() {
   return (
     <div className="flex justify-center bg-black">
       <div className="w-1/2 flex flex-col pb-12">
+        <label for="AssetName" className=" my-12 block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Asset Name</label>
         <input 
-          placeholder="Asset Name"
-          className="mt-8 border rounded p-4"
+          placeholder="Enter your NFT Name"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
         />
+
+        <label for="AssetDescription" className=" my-6 block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Asset Description</label>
         <textarea
           placeholder="Asset Description"
-          className="mt-2 border rounded p-4"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
         />
 
+        <label for="RentalTime" className="my-6 block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Rental Time In Minutes</label>
         <input
-          placeholder="Asset Rental Time In Minutes"
-          className="mt-2 border rounded p-4"
+          placeholder="Enter Time In Minutes"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, time: e.target.value })}
         />
-
+        
+        <label for="AssetPrice" className=" my-6 block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Asset Price</label>
         <input
           placeholder="Asset Price in Matic"
-          className="mt-2 border rounded p-4"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, price: e.target.value })}
         />
+
+        
         <input
           type="file"
           name="Asset"
-          className="my-4"
+          className="my-6"
           onChange={onChange}
         />
         {
