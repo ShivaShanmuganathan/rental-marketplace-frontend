@@ -1,20 +1,20 @@
-# NFT Rental Marketplace ✨Collateral Free Renting✨
+# 💎NFT Rental Marketplace ✨Collateral Free Renting✨
 
-## [Check It Out](https://nft-rental-marketplace.netlify.app) ⏩ [nft-rental-marketplace.netlify.app](https://nft-rental-marketplace.netlify.app/) 
+## [🔔Check Out](https://nft-rental-marketplace.netlify.app) 💎 [nft-rental-marketplace.netlify.app](https://nft-rental-marketplace.netlify.app/) 
 
-## Project Description
+## Project Description 📝
 
-### Fullstack NFT Rental Marketplace Dapp ✨Collateral Free Renting✨
+### 💎Fullstack NFT Rental Marketplace Dapp ✨Collateral Free Renting✨
 
 - NFT Owners can rent their NFT by specifying the name, description, rental duration, and rental price. 
 - Anyone can rent the NFT from the Rental Marketplace by paying the rental price.
 - The Renter will not be able to transfer the rented NFT to anyone. 
 - After the end of the rental duration, either the renter, owner or anyone can call finishRenting function to transfer the NFT from Renter to the NFT Owner.
-![capture](https://user-images.githubusercontent.com/30176438/154909602-1490d864-abc2-4129-aaae-70b158c60302.jpeg)
+![capture](./rental-marketplace-screenshot.png)
 
-![rental_poster1](https://user-images.githubusercontent.com/30176438/154909694-5ca63dce-5aeb-47ad-a1e1-594eabd9b98e.JPG)
+![rental_poster1](./rental-design.jpg)
 
-## About Frontend - Project Is Deployed On [Vercel](https://nft-rental-marketplace.vercel.app/)
+## About Frontend 🎨🖌 - Project Is Deployed On [Vercel](https://nft-rental-marketplace.vercel.app/)
 
 ### This project consists of five pages
 
@@ -41,14 +41,17 @@
  
 </details>
 
-![rental_poster](https://user-images.githubusercontent.com/30176438/154909650-ba1461fd-833b-4031-9070-8edb3c692213.JPG)
+![rental_poster](./rental-design2.jpg)
+
+## Directory Structure 📂
+- `pages/{componenet-name.js}` ⏩ Pages folder contains all components of the dapp.
+- [`contracts`](https://github.com/ShivaShanmuganathan/NFT-Rental-Marketplace/tree/main/contracts) ⏩ NFT Rental Marketplace and NFT Smart contracts that are deployed in the Polygon Mumbai Test Network.
+- [`test`](https://github.com/ShivaShanmuganathan/NFT-Rental-Marketplace/tree/main/test) ⏩ Tests for Smart Contracts.
 
 
+## How To Run This Project Locally 🏃🏾‍♂️💨
 
-
-## How To Run This Project Locally
-
-### Clone This Repo
+### Clone This Repo 
 ```shell
 
 git clone https://github.com/ShivaShanmuganathan/rental-marketplace-frontend
@@ -69,7 +72,7 @@ npm run dev
 ```
 
 
-## Working Explained In Detail
+## Working Explained In Detail 📃
 - Anyone who has created a ERC721 contract with additional functions similar to NFT.sol can list their NFTs for Rent in the Marketplace.
 - When an owner lists a NFT for rent in the Marketplace, the ownership of the item will be transferred from the owner to the marketplace.
 - Anyone can rent the NFTs listed in the marketplace by paying rent.

@@ -97,30 +97,30 @@ export default function CreateItem() {
   return (
     <div className="flex justify-center bg-black">
       <div className="w-1/2 flex flex-col pb-12">
-        <label htmlFor="AssetName" className=" my-12 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Asset Name</label>
+        <label htmlFor="AssetName" className=" my-12 block mb-2 text-2xl font-medium text-gray-900 dark:text-white">Asset Name</label>
         <input 
-          placeholder="Enter your NFT Name"
+          placeholder="Enter Your NFT Name 🖼"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
         />
 
-        <label htmlFor="AssetDescription" className="my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Asset Description</label>
+        <label htmlFor="AssetDescription" className="my-6 block mb-2 text-2xl font-medium text-white ">Asset Description</label>
         <textarea
-          placeholder="Asset Description"
-          className="block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Write A Detailed Description Of Your NFT 📝"
+          className="block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
         />
 
-        <label htmlFor="RentalTime" className="my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Rental Time In Minutes</label>
+        <label htmlFor="RentalTime" className="my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-white">Rental Time In Minutes</label>
         <input
-          placeholder="Enter Time In Minutes"
+          placeholder="Enter Time In Minutes ⌛⏱"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, time: e.target.value })}
         />
         
-        <label htmlFor="AssetPrice" className=" my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-gray-300">Asset Price</label>
+        <label htmlFor="AssetPrice" className=" my-6 block mb-2 text-2xl font-medium text-gray-900 dark:text-white">Asset Price</label>
         <input
-          placeholder="Asset Price in Matic"
+          placeholder="Asset Price in Matic 💰"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           onChange={e => updateFormInput({ ...formInput, price: e.target.value })}
         />
