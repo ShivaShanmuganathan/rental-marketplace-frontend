@@ -91,3 +91,6 @@ npm run dev
 
 ![gas-report-rental](https://user-images.githubusercontent.com/30176438/160335223-978c8b89-e8a3-4af0-9689-77fb003c2596.jpg)
 
+## Demo GIF
+
+![NFT-Rental-Marketplace-28-March-2022](https://user-images.githubusercontent.com/30176438/160345192-d56e13d5-645b-40f5-961a-f461758d62fc.gif)
