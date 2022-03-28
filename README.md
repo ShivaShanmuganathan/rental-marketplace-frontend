@@ -1,6 +1,6 @@
-# 💎NFT Rental Marketplace ✨Collateral Free Renting✨
+# 💎NFT Rental Marketplace 💸Collateral Free Renting🆓
 
-## [🔔Check Out](https://nft-rental-marketplace.netlify.app) 💎 [nft-rental-marketplace.netlify.app](https://nft-rental-marketplace.netlify.app/) 
+## [💎Check Out](https://nft-rental-marketplace.netlify.app) 🔔 [nft-rental-marketplace.netlify.app](https://nft-rental-marketplace.netlify.app/) 
 
 ## Project Description 📝
 
@@ -14,7 +14,8 @@
 
 ![rental_poster1](./rental-design.jpg)
 
-## About Frontend 🎨🖌 - Project Is Deployed On [Vercel](https://nft-rental-marketplace.vercel.app/)
+## About Frontend 🎨🖌 
+### Project Is Deployed On [Vercel](https://nft-rental-marketplace.vercel.app/)
 
 ### This project consists of five pages
 
