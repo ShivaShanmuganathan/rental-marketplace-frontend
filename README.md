@@ -64,12 +64,16 @@ cd rental-marketplace-frontend
 
 ``` shell
 npm install
+or
+yarn install
 ```
 
 ### Run The Frontend
 
 ``` shell
 npm run dev
+or
+yarn run dev
 ```
 
 
